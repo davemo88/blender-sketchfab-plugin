@@ -594,7 +594,7 @@ class SketchfabApi:
 
     def write_model_info(self, title, author, authorUrl, license, uid):
         try:
-            downloadHistory = bpy.context.preferences.addons[__name__.split('.')[0]].preferences.downloadHistory
+            downloadHistory = bpy.context.preferences.addons[__name__].preferences.downloadHistory
             if downloadHistory != "":
                 downloadHistory = os.path.abspath(downloadHistory)
                 createFile = False
@@ -2261,7 +2261,7 @@ class ExportSketchfab(bpy.types.Operator):
 def get_temporary_path():
 
     # Get the preferences cache directory
-    cachePath = bpy.context.preferences.addons[__name__.split('.')[0]].preferences.cachePath
+    cachePath = bpy.context.preferences.addons[__name__].preferences.cachePath
 
     # The cachePath was set in the preferences
     if cachePath:

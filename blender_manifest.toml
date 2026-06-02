@@ -1,0 +1,20 @@
+schema_version = "1.0.0"
+
+id = "sketchfab_plugin"
+version = "1.6.1"
+name = "Sketchfab Plugin"
+tagline = "Browse, download and upload Sketchfab models"
+maintainer = "davemo88 (fork of Sketchfab)"
+type = "add-on"
+
+blender_version_min = "4.2.0"
+
+license = ["SPDX:Apache-2.0"]
+
+website = "https://github.com/davemo88/blender-sketchfab-plugin"
+
+tags = ["Import-Export", "Download", "3D View"]
+
+[permissions]
+network = "Search, download and upload models via the Sketchfab API"
+files = "Import downloaded models and pack files for export"
